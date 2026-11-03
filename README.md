@@ -19,13 +19,13 @@
 
 <img src="./assets/side-art.svg" width="260" align="right" alt="Trekker looking at Pixel Sunflower" />
 
-Veditha here — a 3rd-year Information Technology student focused on full-stack, mobile, and systems development.
+Hi, I'm Veditha — an Information Technology student interested in software engineering, backend systems, and building things that solve real-world problems.
 
-I enjoy contributing to open-source ecosystems (with merged PRs across **OpenVINO**, **AOSSIE**, and **GreedyBear**) and building tools that solve real problems.
+I enjoy working across the stack, exploring system design, and contributing to open-source software.
 
-Currently sharpening my problem-solving through Data Structures &amp; Algorithms while exploring cloud-native and AI integrations.
+Currently deepening my understanding of Data Structures & Algorithms, backend engineering, and cloud-native technologies while experimenting with AI-powered applications.
 
-When I'm away from my terminal, you'll find me trekking mountain trails or capturing frames through my lens.
+Outside of code: mountain trails, travel, and photography.
 
 <br clear="both" />
 
