@@ -10,9 +10,11 @@
 
 <img src="./assets/side-art.svg" width="210" align="left" alt="Veditha Side Art" />
 
-B.Tech in Information Technology (3rd Year). I build **full-stack and backend systems** and contribute to real-world open-source software — with merged pull requests across **OpenVINO**, **AOSSIE**, and **GreedyBear**.
+Hi, I'm Veditha — an Information Technology student interested in software engineering, backend systems, and building things that solve real-world problems.
 
-Most of my work sits around clean system architecture, real-time web applications, and developer tooling using **TypeScript, React, Node.js, C++, Python, and Flutter**, alongside sharpening my foundation in Data Structures & Algorithms and cloud-native workflows.
+I enjoy working across the stack, exploring system design, and contributing to open-source software.
+
+Currently deepening my understanding of Data Structures & Algorithms, backend engineering, and cloud-native technologies while experimenting with AI-powered applications.
 
 Outside the terminal: high-altitude mountain trails, travel, and photography.
 
