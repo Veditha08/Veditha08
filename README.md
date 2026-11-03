@@ -6,7 +6,7 @@
 <h4 align="center">Open-Source Contributor &amp; Developer</h4>
 
 <p align="center">
-  <samp>Stay curious. Keep wandering. 🌻</samp>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=15&duration=3200&pause=1000&color=F59E0B&center=true&vCenter=true&width=520&lines=Stay+curious.+Keep+wandering.+%F0%9F%8C%BB;Building+reliable+software+%26+backend+systems.;Contributing+to+open-source+ecosystems.;Chasing+mountain+trails+%26+capturing+frames." alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -29,7 +29,17 @@ Outside of code: mountain trails, travel, and photography.
 
 <br clear="both" />
 
----
+<div align="center">
+  <details>
+    <summary><samp><b>⚡ Expand System Log: Open-Source &amp; Off-Terminal Coordinates</b></samp></summary>
+    <br />
+    <img src="./assets/telemetry.svg" width="100%" alt="Live Open-Source Telemetry" />
+  </details>
+</div>
+
+<br />
+
+<p align="center"><img src="./assets/divider.svg" width="100%" /></p>
 
 <h3 align="center">🤝 Connect</h3>
 
@@ -57,7 +67,7 @@ Outside of code: mountain trails, travel, and photography.
 
 <br />
 
----
+<p align="center"><img src="./assets/divider.svg" width="100%" /></p>
 
 <h3 align="center">💻 Tech Stack</h3>
 
@@ -69,17 +79,19 @@ Outside of code: mountain trails, travel, and photography.
 
 <br />
 
----
+<p align="center"><img src="./assets/divider.svg" width="100%" /></p>
 
 <h3 align="center">📊 GitHub Stats</h3>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Veditha08&theme=dark&background=0D1117&border=30363D&ring=F59E0B&fire=F59E0B&currStreakLabel=F59E0B" alt="Veditha's GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=Veditha08&theme=dark&background=0D1117&border=30363D&ring=F59E0B&fire=F59E0B&currStreakLabel=F59E0B" alt="Veditha's GitHub Streak" width="48%" />
+  &nbsp;
+  <img src="https://leetcard.jacoblin.cool/Veditha08?theme=dark&font=JetBrains%20Mono&ext=heatmap" alt="Veditha's LeetCode Stats" width="48%" />
 </p>
 
 <br />
 
----
+<p align="center"><img src="./assets/divider.svg" width="100%" /></p>
 
 <h3 align="center">🌻 Contribution Heatmap</h3>
 
@@ -89,10 +101,22 @@ Outside of code: mountain trails, travel, and photography.
 
 <br />
 
----
+<p align="center"><img src="./assets/divider.svg" width="100%" /></p>
 
 <h3 align="center">📈 Activity Graph</h3>
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Veditha08&bg_color=0D1117&color=8B949E&line=F59E0B&point=F0F6FC&area=true&hide_border=true" alt="Veditha's Activity Graph" width="100%" />
+</p>
+
+<br />
+
+<p align="center">
+  <a href="https://github.com/Veditha08">
+    <img src="https://komarev.com/ghpvc/?username=Veditha08&label=ORBIT+VISITS&color=F59E0B&style=flat-square" alt="Orbit Visits" />
+  </a>
+</p>
+
+<p align="center">
+  <samp>"Do not go gentle into that good night." 🌻</samp>
 </p>

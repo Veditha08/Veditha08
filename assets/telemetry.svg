@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 210" width="100%" height="auto" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0.3; }
+      }
+      .pulse-beacon {
+        animation: blink 1.8s infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Background -->
+  <rect x="0.5" y="0.5" width="799" height="209" rx="8" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Terminal Title Bar -->
+  <path d="M 0.5 8.5 A 8 8 0 0 1 8.5 0.5 L 791.5 0.5 A 8 8 0 0 1 799.5 8.5 L 799.5 28.5 L 0.5 28.5 Z" fill="#161B22"/>
+  <line x1="0" y1="28.5" x2="800" y2="28.5" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Title & Beacon -->
+  <circle cx="18" cy="14" r="3.5" fill="#FBBF24" class="pulse-beacon"/>
+  <text x="30" y="18" fill="#FBBF24" font-family="'JetBrains Mono', Consolas, monospace" font-size="11" font-weight="700" letter-spacing="0.5">
+    ⚡ LIVE OPEN-SOURCE TELEMETRY // LATEST MERGED PRs
+  </text>
+
+  <!-- Window Controls -->
+  <g transform="translate(736, 9)" fill="none" stroke="#8B949E" stroke-width="1.2">
+    <line x1="2" y1="6" x2="10" y2="6"/>
+    <rect x="18" y="2" width="8" height="8" rx="0.5"/>
+    <g transform="translate(34, 1)">
+      <line x1="2" y1="2" x2="8" y2="8"/>
+      <line x1="8" y1="2" x2="2" y2="8"/>
+    </g>
+  </g>
+
+  <!-- PR Rows -->
+  <g id="pr-list">
+
+    <!-- Row 1 -->
+    <g transform="translate(24, 66)">
+      <!-- PR Status Dot / Icon -->
+      <circle cx="6" cy="-4" r="3.5" fill="#FBBF24" opacity="0.9"/>
+      <path d="M 6 -10 L 6 2" stroke="#F59E0B" stroke-width="1.2" opacity="0.5"/>
+      <!-- Repo Name -->
+      <text x="22" y="0" fill="#FBBF24" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="700">
+        GreedyBear-Project/GreedyBear
+      </text>
+      <!-- PR Title -->
+      <text x="225" y="0" fill="#F0F6FC" font-family="'JetBrains Mono', Consolas, monospace" font-size="11">
+        Add accessible name to ScrollToTopButton. C…
+      </text>
+      <!-- Merged Date -->
+      <text x="740" y="0" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+        merged 2026-10-27
+      </text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(24, 100)">
+      <!-- PR Status Dot / Icon -->
+      <circle cx="6" cy="-4" r="3.5" fill="#FBBF24" opacity="0.9"/>
+      <path d="M 6 -10 L 6 2" stroke="#F59E0B" stroke-width="1.2" opacity="0.5"/>
+      <!-- Repo Name -->
+      <text x="22" y="0" fill="#FBBF24" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="700">
+        AOSSIE-Org/BabyNest
+      </text>
+      <!-- PR Title -->
+      <text x="225" y="0" fill="#F0F6FC" font-family="'JetBrains Mono', Consolas, monospace" font-size="11">
+        fix: include user_id in AI appointment upda…
+      </text>
+      <!-- Merged Date -->
+      <text x="740" y="0" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+        merged 2026-10-26
+      </text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(24, 134)">
+      <!-- PR Status Dot / Icon -->
+      <circle cx="6" cy="-4" r="3.5" fill="#FBBF24" opacity="0.9"/>
+      <path d="M 6 -10 L 6 2" stroke="#F59E0B" stroke-width="1.2" opacity="0.5"/>
+      <!-- Repo Name -->
+      <text x="22" y="0" fill="#FBBF24" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="700">
+        openvinotoolkit/model_server
+      </text>
+      <!-- PR Title -->
+      <text x="225" y="0" fill="#F0F6FC" font-family="'JetBrains Mono', Consolas, monospace" font-size="11">
+        Reject whitespace-prefixed negative values…
+      </text>
+      <!-- Merged Date -->
+      <text x="740" y="0" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+        merged 2026-10-26
+      </text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(24, 168)">
+      <!-- PR Status Dot / Icon -->
+      <circle cx="6" cy="-4" r="3.5" fill="#FBBF24" opacity="0.9"/>
+      <path d="M 6 -10 L 6 2" stroke="#F59E0B" stroke-width="1.2" opacity="0.5"/>
+      <!-- Repo Name -->
+      <text x="22" y="0" fill="#FBBF24" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="700">
+        AOSSIE-Org/Rein
+      </text>
+      <!-- PR Title -->
+      <text x="225" y="0" fill="#F0F6FC" font-family="'JetBrains Mono', Consolas, monospace" font-size="11">
+        fix: replace react-icons with lucide-react…
+      </text>
+      <!-- Merged Date -->
+      <text x="740" y="0" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+        merged 2026-11-01
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Divider & Ping Line -->
+  <line x1="24" y1="188" x2="776" y2="188" stroke="#161B22" stroke-width="1"/>
+  <text x="24" y="199" fill="#8B949E" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" letter-spacing="0.5">
+    ● STATUS: ONLINE // SYNCED: 2026-11-03 20:49 UTC
+  </text>
+  <text x="776" y="199" text-anchor="end" fill="#F59E0B" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">
+    OpenVINO • AOSSIE • GreedyBear
+  </text>
+</svg>

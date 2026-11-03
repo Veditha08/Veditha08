@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="100%" height="24" fill="none">
+  <defs>
+    <!-- Fading gradient from transparent edges to center amber -->
+    <linearGradient id="divLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363D" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#30363D" stop-opacity="0.5"/>
+      <stop offset="42%" stop-color="#F59E0B" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FBBF24" stop-opacity="1"/>
+      <stop offset="58%" stop-color="#F59E0B" stop-opacity="0.8"/>
+      <stop offset="75%" stop-color="#30363D" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Radial glow for center star -->
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <style>
+      @keyframes pulseAnimation {
+        0%, 100% {
+          transform: scale(0.88);
+          filter: drop-shadow(0 0 1px #F59E0B);
+          opacity: 0.75;
+        }
+        50% {
+          transform: scale(1.18);
+          filter: drop-shadow(0 0 6px #FBBF24);
+          opacity: 1;
+        }
+      }
+      .star-center {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: pulseAnimation 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Horizontal Line -->
+  <line x1="40" y1="12" x2="1160" y2="12" stroke="url(#divLineGrad)" stroke-width="1"/>
+
+  <!-- Center Glow Backing -->
+  <circle cx="600" cy="12" r="10" fill="url(#starGlow)"/>
+
+  <!-- Center 4-Point Interstellar Star & Flank Dots (Animated) -->
+  <g class="star-center">
+    <!-- Flank Dots -->
+    <circle cx="582" cy="12" r="1.5" fill="#FBBF24"/>
+    <circle cx="618" cy="12" r="1.5" fill="#FBBF24"/>
+    <circle cx="572" cy="12" r="1" fill="#F59E0B" opacity="0.6"/>
+    <circle cx="628" cy="12" r="1" fill="#F59E0B" opacity="0.6"/>
+
+    <!-- 4-point star (✦) -->
+    <path d="M 600 4 Q 600 12 592 12 Q 600 12 600 20 Q 600 12 608 12 Q 600 12 600 4 Z" fill="#FBBF24"/>
+  </g>
+</svg>
