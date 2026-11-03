@@ -1,0 +1,346 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="auto" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Dark gradient canvas -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="60%" stop-color="#070A0E"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+
+    <!-- Ripple radial mask/gradient to fade outward -->
+    <radialGradient id="rippleGlow" cx="260" cy="355" r="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#F59E0B" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#050505" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Eye Glow Filter -->
+    <filter id="eyeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Crescent 1 Mask (outer circle minus inner offset circle) -->
+    <mask id="crescent1Mask">
+      <rect width="1200" height="400" fill="black"/>
+      <circle cx="110" cy="85" r="38" fill="white"/>
+      <circle cx="124" cy="82" r="34" fill="black"/>
+    </mask>
+
+    <!-- Crescent 2 Mask -->
+    <mask id="crescent2Mask">
+      <rect width="1200" height="400" fill="black"/>
+      <circle cx="215" cy="55" r="22" fill="white"/>
+      <circle cx="224" cy="53" r="20" fill="black"/>
+    </mask>
+
+    <!-- Saturn Body Clip -->
+    <clipPath id="saturnBodyClip">
+      <circle cx="650" cy="160" r="32"/>
+    </clipPath>
+
+    <!-- Saturn Front Ring Clip (clips out the part behind planet) -->
+    <clipPath id="saturnRingClip">
+      <rect x="565" y="130" width="170" height="60"/>
+    </clipPath>
+  </defs>
+
+  <!-- 1. Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+
+  <!-- 2. Starfield -->
+  <g id="starfield">
+    <circle cx="45" cy="40" r="1.5" fill="#FBBF24" opacity="0.8"/>
+    <circle cx="80" cy="160" r="1" fill="#F0F6FC" opacity="0.7"/>
+    <g transform="translate(140, 35)">
+      <line x1="-3" y1="0" x2="3" y2="0" stroke="#FBBF24" stroke-width="0.8" opacity="0.9"/>
+      <line x1="0" y1="-3" x2="0" y2="3" stroke="#FBBF24" stroke-width="0.8" opacity="0.9"/>
+      <circle cx="0" cy="0" r="1" fill="#FBBF24" opacity="0.9"/>
+    </g>
+    <circle cx="190" cy="130" r="1.2" fill="#F59E0B" opacity="0.6"/>
+    <circle cx="280" cy="50" r="1.5" fill="#F0F6FC" opacity="0.8"/>
+    <g transform="translate(340, 110)">
+      <line x1="-3" y1="0" x2="3" y2="0" stroke="#FBBF24" stroke-width="0.8" opacity="0.85"/>
+      <line x1="0" y1="-3" x2="0" y2="3" stroke="#FBBF24" stroke-width="0.8" opacity="0.85"/>
+      <circle cx="0" cy="0" r="1" fill="#FBBF24" opacity="0.85"/>
+    </g>
+    <circle cx="410" cy="45" r="1.2" fill="#F59E0B" opacity="0.6"/>
+    <circle cx="480" cy="120" r="1.5" fill="#F0F6FC" opacity="0.75"/>
+    <circle cx="520" cy="60" r="1.8" fill="#FBBF24" opacity="0.7"/>
+    <circle cx="60" cy="260" r="1.2" fill="#F0F6FC" opacity="0.5"/>
+    <circle cx="120" cy="310" r="1.5" fill="#FBBF24" opacity="0.6"/>
+    <g transform="translate(380, 240)">
+      <line x1="-3" y1="0" x2="3" y2="0" stroke="#FBBF24" stroke-width="0.8" opacity="0.7"/>
+      <line x1="0" y1="-3" x2="0" y2="3" stroke="#FBBF24" stroke-width="0.8" opacity="0.7"/>
+      <circle cx="0" cy="0" r="1" fill="#FBBF24" opacity="0.7"/>
+    </g>
+    <circle cx="460" cy="280" r="1.2" fill="#F59E0B" opacity="0.5"/>
+    <circle cx="510" cy="340" r="1.5" fill="#F0F6FC" opacity="0.6"/>
+    <circle cx="30" cy="360" r="1" fill="#FBBF24" opacity="0.5"/>
+    <circle cx="310" cy="170" r="1.2" fill="#F0F6FC" opacity="0.6"/>
+    <circle cx="230" cy="190" r="1" fill="#FBBF24" opacity="0.5"/>
+  </g>
+
+  <!-- 3. Left Scene: Celestial Moons -->
+  <!-- Crescent 1 (Large) -->
+  <g id="crescent-1">
+    <g mask="url(#crescent1Mask)">
+      <circle cx="110" cy="85" r="38" fill="#0D1117"/>
+      <line x1="60" y1="47" x2="160" y2="47" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="51" x2="160" y2="51" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="55" x2="160" y2="55" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="59" x2="160" y2="59" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="63" x2="160" y2="63" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="67" x2="160" y2="67" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="71" x2="160" y2="71" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="75" x2="160" y2="75" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="79" x2="160" y2="79" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="83" x2="160" y2="83" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="87" x2="160" y2="87" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="91" x2="160" y2="91" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="95" x2="160" y2="95" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="99" x2="160" y2="99" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="103" x2="160" y2="103" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="107" x2="160" y2="107" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="111" x2="160" y2="111" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="115" x2="160" y2="115" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="119" x2="160" y2="119" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+      <line x1="60" y1="123" x2="160" y2="123" stroke="#FBBF24" stroke-width="1.2" opacity="0.85"/>
+    </g>
+    <!-- Outer Crescent Arc -->
+    <path d="M 83 58 A 38 38 0 0 0 110 123 A 38 38 0 0 0 148 85" fill="none" stroke="#FBBF24" stroke-width="1.8"/>
+  </g>
+
+  <!-- Crescent 2 (Small) -->
+  <g id="crescent-2">
+    <g mask="url(#crescent2Mask)">
+      <circle cx="215" cy="55" r="22" fill="#0D1117"/>
+      <line x1="185" y1="33" x2="245" y2="33" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="36.5" x2="245" y2="36.5" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="40" x2="245" y2="40" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="43.5" x2="245" y2="43.5" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="47" x2="245" y2="47" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="50.5" x2="245" y2="50.5" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="54" x2="245" y2="54" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="57.5" x2="245" y2="57.5" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="61" x2="245" y2="61" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="64.5" x2="245" y2="64.5" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="68" x2="245" y2="68" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="71.5" x2="245" y2="71.5" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+      <line x1="185" y1="75" x2="245" y2="75" stroke="#F59E0B" stroke-width="1" opacity="0.8"/>
+    </g>
+    <path d="M 199 39 A 22 22 0 0 0 215 77 A 22 22 0 0 0 237 55" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+  </g>
+
+  <!-- 4. Concentric Ripple Lines -->
+  <rect x="0" y="270" width="550" height="130" fill="url(#rippleGlow)"/>
+  <g id="ripples">
+    <ellipse cx="260" cy="355" rx="32" ry="7" fill="none" stroke="#FBBF24" stroke-width="1.8" opacity="0.9"/>
+    <ellipse cx="260" cy="355" rx="58" ry="12" fill="none" stroke="#F59E0B" stroke-width="1.6" opacity="0.85"/>
+    <ellipse cx="260" cy="355" rx="90" ry="18" fill="none" stroke="#FBBF24" stroke-width="1.5" opacity="0.75"/>
+    <ellipse cx="260" cy="355" rx="130" ry="24" fill="none" stroke="#F59E0B" stroke-width="1.3" opacity="0.65"/>
+    <ellipse cx="260" cy="355" rx="175" ry="30" fill="none" stroke="#FBBF24" stroke-width="1.2" opacity="0.5"/>
+    <ellipse cx="260" cy="355" rx="225" ry="36" fill="none" stroke="#F59E0B" stroke-width="1.1" opacity="0.35"/>
+    <ellipse cx="260" cy="355" rx="280" ry="42" fill="none" stroke="#FBBF24" stroke-width="1" opacity="0.22"/>
+    <ellipse cx="260" cy="355" rx="340" ry="48" fill="none" stroke="#F59E0B" stroke-width="0.9" opacity="0.12"/>
+  </g>
+
+  <!-- 5. Rising Human Silhouette (Minimalist, Head tilted up toward cosmos) -->
+  <g id="silhouette">
+    <!-- Body & Head Silhouette -->
+    <!-- Path rises from ripples at bottom center-left (x=260, y=365) -->
+    <path d="
+      M 190 375
+      C 195 350, 205 320, 218 295
+      C 225 280, 230 265, 233 248
+      C 235 238, 237 225, 235 210
+      C 232 195, 235 180, 244 165
+      C 252 152, 265 142, 282 138
+      C 298 134, 314 138, 325 148
+      C 334 156, 338 168, 335 180
+      C 332 192, 324 200, 315 208
+      C 305 216, 298 226, 296 238
+      C 294 252, 298 268, 305 285
+      C 314 308, 324 338, 330 375
+      Z"
+      fill="#050505"
+      stroke="#FBBF24"
+      stroke-width="2.2"
+      stroke-linejoin="round"/>
+
+    <!-- Subtle inner neck/shoulder contour in amber -->
+    <path d="M 244 165 C 255 180, 270 195, 295 205" fill="none" stroke="#F59E0B" stroke-width="1.2" opacity="0.6"/>
+    <path d="M 235 210 C 248 220, 262 232, 275 250" fill="none" stroke="#F59E0B" stroke-width="1.2" opacity="0.4"/>
+
+    <!-- Glowing Oval Eyes (Tilted looking up at the sky/terminal) -->
+    <!-- Left Eye -->
+    <ellipse cx="282" cy="158" rx="4.5" ry="2.2" transform="rotate(-28 282 158)" fill="#FBBF24" filter="url(#eyeGlow)"/>
+    <!-- Right Eye -->
+    <ellipse cx="297" cy="151" rx="4.5" ry="2.2" transform="rotate(-28 297 151)" fill="#FBBF24" filter="url(#eyeGlow)"/>
+    <!-- Inner bright white pupil glimmer -->
+    <circle cx="283" cy="157" r="0.9" fill="#F0F6FC"/>
+    <circle cx="298" cy="150" r="0.9" fill="#F0F6FC"/>
+  </g>
+
+  <!-- 6. Right Scene: Floating Linux Terminal Window -->
+  <g id="terminal-window" transform="translate(560, 22)">
+    <!-- Terminal Outer Frame Shadow -->
+    <rect x="0" y="0" width="615" height="356" rx="7" fill="#000000" opacity="0.5"/>
+    <!-- Terminal Body -->
+    <rect x="0" y="0" width="615" height="356" rx="7" fill="#0A0D12" stroke="#30363D" stroke-width="1.5"/>
+
+    <!-- Window Title Bar -->
+    <path d="M 0 7 A 7 7 0 0 1 7 0 L 608 0 A 7 7 0 0 1 615 7 L 615 28 L 0 28 Z" fill="#161B22"/>
+    <line x1="0" y1="28" x2="615" y2="28" stroke="#30363D" stroke-width="1"/>
+
+    <!-- Title Bar Icon & Text -->
+    <text x="14" y="19" fill="#F0F6FC" font-family="'JetBrains Mono', Consolas, ui-monospace, monospace" font-size="11.5" font-weight="600" letter-spacing="0.4">
+      <tspan fill="#FBBF24">veditha@cosmos</tspan>: ~/Desktop
+    </text>
+
+    <!-- Top-Right Window Controls: — □ × -->
+    <g transform="translate(552, 9)" fill="none" stroke="#8B949E" stroke-width="1.2">
+      <!-- Minimize '—' -->
+      <line x1="2" y1="6" x2="10" y2="6"/>
+      <!-- Maximize '□' -->
+      <rect x="18" y="2" width="8" height="8" rx="0.5"/>
+      <!-- Close '×' -->
+      <g transform="translate(34, 1)">
+        <line x1="2" y1="2" x2="8" y2="8"/>
+        <line x1="8" y1="2" x2="2" y2="8"/>
+      </g>
+    </g>
+
+    <!-- Menu Bar -->
+    <rect x="0" y="28" width="615" height="22" fill="#0D1117"/>
+    <line x1="0" y1="50" x2="615" y2="50" stroke="#21262d" stroke-width="1"/>
+    <text x="14" y="43" fill="#8B949E" font-family="'JetBrains Mono', Consolas, ui-monospace, monospace" font-size="10.5" letter-spacing="0.5">
+      File    Actions    Edit    View    Help
+    </text>
+
+    <!-- Terminal Interior -->
+    <g transform="translate(0, 0)">
+
+      <!-- Left Sub-panel: Hatched/ASCII Saturn & Pixel Sunflower -->
+      <g id="terminal-saturn" transform="translate(-50, 0)">
+        <!-- Saturn Back Ring -->
+        <ellipse cx="650" cy="160" rx="68" ry="16" transform="rotate(-16 650 160)" fill="none" stroke="#F59E0B" stroke-width="2.5" opacity="0.6"/>
+        <ellipse cx="650" cy="160" rx="60" ry="13" transform="rotate(-16 650 160)" fill="none" stroke="#FBBF24" stroke-width="1" stroke-dasharray="3 3" opacity="0.75"/>
+
+        <!-- Saturn Planet Body -->
+        <circle cx="650" cy="160" r="32" fill="#0A0D12" stroke="#FBBF24" stroke-width="1.5"/>
+        <g clip-path="url(#saturnBodyClip)">
+      <line x1="615" y1="128" x2="685" y2="128" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="131" x2="685" y2="131" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="134" x2="685" y2="134" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="137" x2="685" y2="137" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="140" x2="685" y2="140" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="143" x2="685" y2="143" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="146" x2="685" y2="146" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="149" x2="685" y2="149" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="152" x2="685" y2="152" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="155" x2="685" y2="155" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="158" x2="685" y2="158" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="161" x2="685" y2="161" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="164" x2="685" y2="164" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="167" x2="685" y2="167" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="170" x2="685" y2="170" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="173" x2="685" y2="173" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="176" x2="685" y2="176" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="179" x2="685" y2="179" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="182" x2="685" y2="182" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="185" x2="685" y2="185" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="188" x2="685" y2="188" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+      <line x1="615" y1="191" x2="685" y2="191" stroke="#FBBF24" stroke-width="1" opacity="0.85"/>
+        </g>
+
+        <!-- Saturn Front Ring (Crossing in front of the sphere) -->
+        <path d="M 582 170 C 610 186, 690 178, 718 152"
+          fill="none" stroke="#FBBF24" stroke-width="2.8"/>
+        <path d="M 590 168 C 615 182, 685 175, 710 154"
+          fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="2 2"/>
+
+        <!-- Tiny Pixel Sunflower Icon beside/under Saturn -->
+        <g id="term-pixel-sunflower" transform="translate(638, 206) scale(1.4)">
+          <!-- Stem & Leaves -->
+          <rect x="7" y="12" width="2" height="12" fill="#78350F"/>
+          <rect x="4" y="17" width="3" height="2" fill="#B45309"/>
+          <rect x="9" y="15" width="3" height="2" fill="#B45309"/>
+          <!-- Petals (Amber & Yellow) -->
+          <rect x="6" y="4" width="4" height="2" fill="#FBBF24"/>
+          <rect x="6" y="12" width="4" height="2" fill="#FBBF24"/>
+          <rect x="3" y="7" width="2" height="4" fill="#FBBF24"/>
+          <rect x="11" y="7" width="2" height="4" fill="#FBBF24"/>
+          <rect x="4" y="5" width="2" height="2" fill="#F59E0B"/>
+          <rect x="10" y="5" width="2" height="2" fill="#F59E0B"/>
+          <rect x="4" y="11" width="2" height="2" fill="#F59E0B"/>
+          <rect x="10" y="11" width="2" height="2" fill="#F59E0B"/>
+          <!-- Flower Center -->
+          <rect x="6" y="7" width="4" height="4" fill="#161B22"/>
+          <rect x="7" y="8" width="2" height="2" fill="#FBBF24"/>
+        </g>
+      </g>
+
+      <!-- Right Sub-panel: Neofetch / System Fetch Info -->
+      <g id="system-fetch" transform="translate(198, 72)" font-family="'JetBrains Mono', Consolas, ui-monospace, monospace" font-size="11.2" letter-spacing="0.2">
+        <!-- Title & Separator -->
+        <text x="0" y="0" font-weight="700">
+          <tspan fill="#FBBF24">veditha</tspan><tspan fill="#F0F6FC">@</tspan><tspan fill="#FBBF24">cosmos</tspan>
+        </text>
+        <text x="0" y="12" fill="#30363D">---------------------------------------</text>
+
+        <!-- Fetch Details -->
+        <text x="0" y="28">
+          <tspan fill="#FBBF24" font-weight="600">OS: </tspan>
+          <tspan fill="#F0F6FC">Linux (WSL2) x86_64</tspan>
+        </text>
+        <text x="0" y="44">
+          <tspan fill="#FBBF24" font-weight="600">Role: </tspan>
+          <tspan fill="#F0F6FC">Full-Stack &amp; Open Source</tspan>
+        </text>
+        <text x="0" y="60">
+          <tspan fill="#FBBF24" font-weight="600">PRs: </tspan>
+          <tspan fill="#F0F6FC">OpenVINO, AOSSIE, GreedyBear</tspan>
+        </text>
+        <text x="0" y="76">
+          <tspan fill="#FBBF24" font-weight="600">Stack: </tspan>
+          <tspan fill="#F0F6FC">C++, TS, React, Node, Python, Flutter</tspan>
+        </text>
+        <text x="0" y="92">
+          <tspan fill="#FBBF24" font-weight="600">Focus: </tspan>
+          <tspan fill="#F0F6FC">Cloud-Native, AI &amp; DSA</tspan>
+        </text>
+        <text x="0" y="108">
+          <tspan fill="#FBBF24" font-weight="600">Vibe: </tspan>
+          <tspan fill="#F0F6FC">Interstellar • Trekking • Sunflowers</tspan>
+        </text>
+
+        <!-- Palette Blocks (8 shades from black to bright sunflower yellow) -->
+        <g transform="translate(0, 122)">
+          <rect x="0" y="0" width="16" height="10" rx="2" fill="#0D1117" stroke="#30363D" stroke-width="0.8"/>
+          <rect x="20" y="0" width="16" height="10" rx="2" fill="#161B22"/>
+          <rect x="40" y="0" width="16" height="10" rx="2" fill="#451A03"/>
+          <rect x="60" y="0" width="16" height="10" rx="2" fill="#78350F"/>
+          <rect x="80" y="0" width="16" height="10" rx="2" fill="#B45309"/>
+          <rect x="100" y="0" width="16" height="10" rx="2" fill="#D97706"/>
+          <rect x="120" y="0" width="16" height="10" rx="2" fill="#F59E0B"/>
+          <rect x="140" y="0" width="16" height="10" rx="2" fill="#FBBF24"/>
+        </g>
+      </g>
+
+      <!-- Bottom Prompt -->
+      <g id="shell-prompt" transform="translate(18, 305)" font-family="'JetBrains Mono', Consolas, ui-monospace, monospace" font-size="11.5">
+        <text x="0" y="0" fill="#F59E0B">
+          ┌──(<tspan fill="#FBBF24" font-weight="700">veditha㉿cosmos</tspan>)-[<tspan fill="#F0F6FC">~/Desktop</tspan>]
+        </text>
+        <text x="0" y="18" fill="#F59E0B">
+          └─$ <tspan fill="#FBBF24">█</tspan>
+        </text>
+      </g>
+
+    </g>
+  </g>
+</svg>
