@@ -34,6 +34,12 @@ Outside the terminal: high-altitude mountain trails, travel, and photography.
   <a href="mailto:veditha888@gmail.com"><img src="./assets/icons/email.svg" width="36" height="36" alt="Email" /></a>
 </p>
 
+## Open Source
+
+I contribute bug fixes, reliability improvements, and features to open-source software. Pull requests and issues across [OpenVINO](https://github.com/openvinotoolkit/model_server), [AOSSIE](https://github.com/AOSSIE-Org), [GreedyBear](https://github.com/GreedyBear-Project/GreedyBear), and others are documented in one place, detailing the problem context, code changes, and review outcomes.
+
+↳ **[open-source-contributions](https://github.com/Veditha08/open-source-contributions)**
+
 ## Activity
 
 <p align="center">
