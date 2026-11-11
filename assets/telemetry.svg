@@ -48,6 +48,25 @@
       </text>
       <!-- PR Title -->
       <text x="225" y="0" fill="#F0F6FC" font-family="'JetBrains Mono', Consolas, monospace" font-size="11">
+        Prevent unmounting widgets from cancelling…
+      </text>
+      <!-- Merged Date -->
+      <text x="740" y="0" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
+        merged 2026-11-11
+      </text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(24, 100)">
+      <!-- PR Status Dot / Icon -->
+      <circle cx="6" cy="-4" r="3.5" fill="#FBBF24" opacity="0.9"/>
+      <path d="M 6 -10 L 6 2" stroke="#F59E0B" stroke-width="1.2" opacity="0.5"/>
+      <!-- Repo Name -->
+      <text x="22" y="0" fill="#FBBF24" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="700">
+        GreedyBear-Project/GreedyBear
+      </text>
+      <!-- PR Title -->
+      <text x="225" y="0" fill="#F0F6FC" font-family="'JetBrains Mono', Consolas, monospace" font-size="11">
         Add accessible name to ScrollToTopButton. C…
       </text>
       <!-- Merged Date -->
@@ -56,8 +75,8 @@
       </text>
     </g>
 
-    <!-- Row 2 -->
-    <g transform="translate(24, 100)">
+    <!-- Row 3 -->
+    <g transform="translate(24, 134)">
       <!-- PR Status Dot / Icon -->
       <circle cx="6" cy="-4" r="3.5" fill="#FBBF24" opacity="0.9"/>
       <path d="M 6 -10 L 6 2" stroke="#F59E0B" stroke-width="1.2" opacity="0.5"/>
@@ -75,8 +94,8 @@
       </text>
     </g>
 
-    <!-- Row 3 -->
-    <g transform="translate(24, 134)">
+    <!-- Row 4 -->
+    <g transform="translate(24, 168)">
       <!-- PR Status Dot / Icon -->
       <circle cx="6" cy="-4" r="3.5" fill="#FBBF24" opacity="0.9"/>
       <path d="M 6 -10 L 6 2" stroke="#F59E0B" stroke-width="1.2" opacity="0.5"/>
@@ -93,31 +112,12 @@
         merged 2026-10-26
       </text>
     </g>
-
-    <!-- Row 4 -->
-    <g transform="translate(24, 168)">
-      <!-- PR Status Dot / Icon -->
-      <circle cx="6" cy="-4" r="3.5" fill="#FBBF24" opacity="0.9"/>
-      <path d="M 6 -10 L 6 2" stroke="#F59E0B" stroke-width="1.2" opacity="0.5"/>
-      <!-- Repo Name -->
-      <text x="22" y="0" fill="#FBBF24" font-family="'JetBrains Mono', Consolas, monospace" font-size="11.5" font-weight="700">
-        AOSSIE-Org/Rein
-      </text>
-      <!-- PR Title -->
-      <text x="225" y="0" fill="#F0F6FC" font-family="'JetBrains Mono', Consolas, monospace" font-size="11">
-        fix: replace react-icons with lucide-react…
-      </text>
-      <!-- Merged Date -->
-      <text x="740" y="0" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', Consolas, monospace" font-size="10.5">
-        merged 2026-11-01
-      </text>
-    </g>
   </g>
 
   <!-- Bottom Divider & Ping Line -->
   <line x1="24" y1="188" x2="776" y2="188" stroke="#161B22" stroke-width="1"/>
   <text x="24" y="199" fill="#8B949E" font-family="'JetBrains Mono', Consolas, monospace" font-size="9" letter-spacing="0.5">
-    ● STATUS: ONLINE // SYNCED: 2026-11-11 05:08 UTC
+    ● STATUS: ONLINE // SYNCED: 2026-11-11 19:21 UTC
   </text>
   <text x="776" y="199" text-anchor="end" fill="#F59E0B" font-family="'JetBrains Mono', Consolas, monospace" font-size="9">
     OpenVINO • AOSSIE • GreedyBear
